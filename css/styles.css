@@ -1,0 +1,132 @@
+*,
+*::after,
+*::before {
+  /* reset */
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  /* by default box-sizing isn't inherited */ }
+
+html {
+  font-size: 62.5%;
+  font-family: 'Red Hat Text', sans-serif; }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      /* font-size: 56.25%; */
+      font-size: 50%; } }
+
+.container {
+  position: relative;
+  background-image: url(../images/bg-stars.svg);
+  background-color: #343650;
+  height: 100vh; }
+
+.launch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10rem;
+  /* &__box{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 60%;
+        margin-top: 5rem;
+        
+    } */ }
+  .launch__title {
+    font-size: 1.5rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: .5rem; }
+  .launch__box {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 5rem; }
+  .launch__box-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .launch__box-item {
+    width: 12.9rem;
+    height: 12.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #1e1f29;
+    border-radius: 1rem;
+    box-shadow: 0 1.5rem 0 #1e1f29;
+    overflow: hidden; }
+    .launch__box-item--1 {
+      width: 15rem;
+      height: 15rem;
+      background-color: #252631;
+      border: 0.2rem solid #1e1f29;
+      clip-path: polygon(0 0, 100% 0, 100% 86%, 91% 90%, 89% 100%, 11% 100%, 9% 91%, 0 86%); }
+    .launch__box-item--2 {
+      width: 15rem;
+      height: 15rem;
+      background-color: #2a2c41;
+      clip-path: polygon(0 15%, 8% 8%, 10% 0, 90% 0%, 91% 8%, 100% 15%, 100% 100%, 0 100%); }
+    .launch__box-item--number {
+      position: absolute;
+      font-size: 8rem;
+      font-weight: bold;
+      color: #fb6087; }
+      @media only screen and (max-width: 56.25em) {
+        .launch__box-item--number {
+          font-size: 5rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .launch__box-item {
+        width: 12rem;
+        height: 12rem; } }
+  .launch__box-day {
+    position: relative;
+    margin-top: 2rem;
+    font-size: 1.7rem;
+    color: #8486a9; }
+
+.mountains {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly; }
+  .mountains__img-box {
+    width: 100%;
+    height: 100%;
+    /* max-width: 100%;
+        max-height: 100%; */
+    /* background-size: cover; */
+    /* background-image: url(../images/pattern-hills.svg); */
+    /* background-repeat: no-repeat; */ }
+  .mountains__networks {
+    position: absolute;
+    font-size: 3rem;
+    color: #8486a9;
+    top: 8rem;
+    width: 15%;
+    display: flex;
+    justify-content: space-around; }
+    .mountains__networks img:hover {
+      color: #fb6087;
+      background-color: #fb6087;
+      overflow: hidden; }
+
+.attribution {
+  /* position: absolute;
+    bottom: 0;
+    left: 50%; */
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  position: relative; }
+  .attribution a {
+    text-decoration: none; }
