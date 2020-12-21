@@ -19,7 +19,7 @@ html {
   position: relative;
   background-image: url(../images/bg-stars.svg);
   background-color: #343650;
-  height: 100vh; }
+  height: 95vh; }
 
 .launch {
   display: flex;
@@ -38,7 +38,8 @@ html {
     font-size: 1.5rem;
     color: white;
     text-transform: uppercase;
-    letter-spacing: .5rem; }
+    letter-spacing: .5rem;
+    text-align: center; }
   .launch__box {
     display: grid;
     grid-gap: 2rem;
@@ -100,12 +101,7 @@ html {
   justify-content: space-evenly; }
   .mountains__img-box {
     width: 100%;
-    height: 100%;
-    /* max-width: 100%;
-        max-height: 100%; */
-    /* background-size: cover; */
-    /* background-image: url(../images/pattern-hills.svg); */
-    /* background-repeat: no-repeat; */ }
+    height: 100%; }
   .mountains__networks {
     position: absolute;
     font-size: 3rem;
@@ -118,15 +114,36 @@ html {
       color: #fb6087;
       background-color: #fb6087;
       overflow: hidden; }
+    .mountains__networks .img {
+      width: 2rem;
+      height: 2rem; }
+      .mountains__networks .img--face {
+        background-image: url(../images/icon-facebook.svg);
+        background-size: cover; }
+      .mountains__networks .img--inst {
+        background-image: url(../images/icon-instagram.svg);
+        background-size: cover; }
+      .mountains__networks .img--pint {
+        background-image: url(../images/icon-pinterest.svg);
+        background-size: cover; }
+      .mountains__networks .img:hover {
+        filter: invert(65%) sepia(88%) saturate(3723%) hue-rotate(311deg) brightness(101%) contrast(97%); }
 
 .attribution {
-  /* position: absolute;
-    bottom: 0;
-    left: 50%; */
+  position: absolute;
+  bottom: 0;
   text-decoration: none;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   display: flex;
+  justify-content: center;
   position: relative; }
   .attribution a {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #fb6087; }
+    .attribution a:hover {
+      color: white;
+      background-color: #fb6087;
+      transform: scale(1.4) rotate(3deg);
+      border: 1px solid white;
+      border-radius: 0.3rem; }
